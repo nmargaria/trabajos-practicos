@@ -1,0 +1,229 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,700);
+/*font-family: 'Raleway', sans-serif;*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+/*font-family: 'Open Sans', sans-serif;*/
+
+body{
+	font-family: "open sans"
+}
+
+h1 h2 h3 h4 h5 h6{
+	font-family: "Raleway"
+}
+
+.cuerpo{
+	width: 1400px;
+	margin: auto;
+	
+}
+
+header li{
+   list-style-type: none;
+   text-align: right;
+}
+.cabecera{
+	text-align: right;
+}
+
+nav li{
+	display: inline-block;
+	margin-left: 15px;
+
+}
+
+header{
+	margin-top: 60px;
+	margin-bottom: 80px;
+}
+
+.titulo-banner{
+	float: left;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	margin-left: 80px;
+	
+}
+
+.titulo-banner h3{
+	font-size: 50px;
+}
+
+#searchform{
+
+	float:left;
+	margin: 0 auto;
+	margin-top: 590px;
+
+
+}
+
+
+
+.barra{
+	float:right;
+}
+  
+
+.paquete1{
+	vertical-align: center;
+}
+
+
+a{
+	color: black;
+	text-decoration: none;
+	text-align: right;
+}
+
+.contenedor-inicial{
+	background-color:#E4F089;
+	height: 600px;
+	background: url(../imagenes/banner1.jpg) no-repeat center top scroll ;
+	margin-left: 0;
+}
+
+.titulo-banner{
+	color: white;
+}
+
+
+
+
+.field{
+	text-align: center;
+}
+.servicios{
+
+	text-align: center;
+	display: inline-block;
+}
+.box{
+	display: inline-block;
+}
+h2{
+	text-align: center;
+}
+.hostro{
+	text-align: center;
+}
+.caracteristicas{
+	vertical-align: left;
+}
+.iphone{
+	text-align: center;
+	float: center;
+	margin: 10px;
+}
+
+.pricing p{
+	text-align: center;
+}
+
+.small-package p{
+	text-align: left;
+}
+
+footer ul{
+	list-style-type: none;
+}
+
+footer li{
+	text-align: right;
+}
+
+.caracteristicas{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 50px;
+}
+
+.uno {
+	text-align: right;
+	padding: 20px;
+}
+
+.dos {
+	text-align: right;
+	padding: 20px;
+
+}
+.tres {
+	text-align: right;
+	padding: 20px;
+
+}
+.cuatro {
+	text-align: left;
+	padding: 20px;
+
+}
+.cinco {
+	text-align: left;
+	padding: 20px;
+
+}
+.seis {
+	text-align: left;
+	padding: 20px;
+
+}
+
+.precios{
+	display: flex;
+	justify-content: center;
+
+}
+
+.titulo-precios{
+	text-align: center;
+}
+
+.small-package{
+	padding: 100px 100px 100px 100px;
+	text-align: center;
+}
+
+.normal-package{
+	padding: 100px 100px 100px 100px;
+	text-align: center;
+}
+
+.big-package{
+	padding: 100px 100px 100px 100px;
+	text-align: center;
+}
+
+.best-package{
+	padding: 100px 100px 100px 100px;
+	text-align: center;
+}
+
+.precios li{
+	list-style-type: none;
+}
+
+.field{
+
+		background-color: yellow;
+
+}
+	
+.field input[type=text]{
+	width: 100%;
+	height: 70px;
+	border: solid 1px #ccc;
+	font-family: inherit;
+	font-size: 20px;
+	padding: 0 30px;
+
+}
+
+.field input[type=button]{
+	width: 200px;
+	height:70px;
+	background-color: blue;
+	color: orange;
+	position: absolute;
+}

@@ -1,0 +1,36 @@
+body{
+	background-color: red;
+	font-family: verdana, tahoma, sans-serif;
+}
+section{
+	font-size: 16px;
+	/* unidades de medida
+		-px unidad de medida absoluta
+		-em unidad de medida relativa. Capacidad de cambiar segun su contexo*/
+	color: purple;
+		/*
+		HEXADECIMAL = #ffa5e2
+		name = olive
+		rgb (225,0,0)
+		rgba(255,0,0,0.5) agregarle transparencia
+		*/
+	font-weight: normal; /*bold*/
+	text-transform: capitalize;
+	line-height: 22px;
+}
+
+.caja-01{
+	font-size: 20px;
+}
+.caja-02{
+	font-size: 10px;
+}
+h1{
+	font-weight: normal;
+	font-style: oblique;
+	text-align: left; /*left right center or justify*/
+	text-transform: capitalize; /*none uppercase lowercase capitalize*/
+	text-decoration: underline;/*none underline overline line-through*/
+	letter-spacing: ;
+	word-spacing: ;
+}

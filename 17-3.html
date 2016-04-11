@@ -1,0 +1,65 @@
+<!--CSS Cascade Style Sheet=lenguaje de estilo.Version 3
+REGLAS DE ESTILO
+4 partes definidas (sintaxis)
+Selector{
+			propiedad:valor;=declaracion/*comentario*/
+}
+Tres tipos de selectores
+1 selector: DE TIPO ETIQUETA
+H2{
+	propiedad:valor;
+}
+2 selector: DE TIPO CLASE siempre comienza con un punto(sin espacios ni caracteres extraños)
+.texto-destacado{
+	propiedad:valor;   debo ir a mi htm y en la etiqueta debo escribir <p class="texto-destacado"></p> no se escribe el punto, solo el valor
+}
+3 selector: DE TIPO ID  Se puede usar una sola vez por documento html
+#cabecera{
+	propiedad:valor;       voy a html y pongo <header id="cabecera"></header>
+}
+4 selector: DE TIP DESCENDIENTE O DESCENDENTE   dar estilo a u elemento siempre y cuando sea tipo de otro
+												<header>
+												<p></p>
+												<article class="noticias">
+												<p></p>
+												</article>
+												</header>
+
+header p{					Puedo descender la cantidad que quiera. Pero se sugiere que no tengan una cadena tan larga, porque hace que un navegador tarde mas en reproducirse. Hasta un 3ro o 4to elemento. Luego vuelvo a comenzar
+	propiedad:valor;
+}												
+
+.noticias p{
+	propiedad:valor;
+}
+
+Escribir CSS
+Se puede hacer de manera interna:adentro del documento html. Lo hago de la siguiente manera (solo se utiliza si yo tengo que hacer un doc html, sino no conviene porque si quiero modificar algo tengo que modificarlo en cada documento html que tenga)
+Dentro de head pongo <style>
+						body{
+							font-family:verdana;
+						}
+						</style>
+
+Vinculacion externa: doc externo a mi html donde tengo mi CSS con mi extension .CSS
+Para vincular mi CSS con todos mis archivos html. Lo hago con una etiqueta link.Siempre dentro de head, despues de title (head meta title link). Siempre tener una carpeta especifica para mis archivos CSS. Carpeta de proyecto-doc htm-carpeta css-hoja de esilos
+<link rel="stylesheet" hrf="donde esta mi hoja de estilo">-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Clase3</title>
+	<link rel="stylesheet" href="css/17-3-stylesheet.css">
+</head>
+<body>
+<h1>erspiciatis unde omnis iste natus error sit voluptatem accusantium </h1>
+<section>
+<article class="caja-01">
+	"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+</article>
+<article class="caja-02">
+	"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+</article>
+</section>
+</body>
+</html>

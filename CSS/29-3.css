@@ -1,0 +1,664 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,700);
+/*font-family: 'Raleway', sans-serif;*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+/*font-family: 'Open Sans', sans-serif;*/
+
+
+/*Selector Universal*/
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	/* upper-alpha | upper-roman | upper-latin | url(../images/ser1.png) | disc | circle | square*/
+}
+
+header{
+	max-width: 1200px;
+	/*
+	// height:100px;
+	// min-height: 100px;
+	// min-width: ;
+	// max-height: ;
+	// max-width: ;
+	// RELLENOS 
+	*/
+	/*
+		padding-top:;
+		padding-right:;
+		padding-bottom:;
+		padding-left:;
+	*/
+	/*padding-top: 40px;*/
+
+	/*Short hand*/
+	/*padding: 40px; (igual para todos los costados) */
+	/*padding: 40px 10px; (1er arriba abajo / 2do derecha e izquierda) */
+	/*padding: 40px 10px 5px; (1er arriba / 2do der e izq / 3ero abajo) */
+	/*padding: 10px 20px 30px 40px */
+	padding: 15px;
+	/*border-top: solid 3px #f00;*/
+	/*border: solid 10px #000;*/
+	/*solid | dotted | dashed | double*/
+	
+	/*Márgenes
+		margin: 30px 20px 50px 0;
+	*/
+	margin: 0 auto;
+	position: fixed;
+	z-index: 600;
+	background-color: #fff;
+	top:0;
+	left: 0;
+	right: 0;
+}
+
+.cleaner{
+	clear: both;
+}
+
+nav{
+	float: right;
+}
+nav li{
+	display: inline-block;
+	margin-left: 15px;
+}
+nav a{
+	color: #333;
+}
+
+.contenedor-inicial{
+	// background-color:#E4F089;
+	min-height: 500px;
+	/*
+	background-image: url(../images/indexbanner-bg3.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	/* repeat | no-repeat | repeat-x | repeat-y */
+	/*background-attachment: scroll; /* fixed */
+	background: url(../imagenes/banner1.jpg) no-repeat center top scroll;
+	margin-top: 59px;
+}
+
+.wrapper{
+	max-width: 1200px;
+	margin: auto;
+	/*background-color: rgba(255,0,0,0.5);*/
+}
+
+.main-title{
+	color: #fff;
+	font-size: 40px;
+	/*margin-top: 280px;
+	margin-bottom: 0;*/
+	margin: 280px 0 0;
+	display: inline-block;
+}
+
+/*selector de hmno adyacente
+da estilo a un elemento que se encuentre INMEDIATAMENTE después de otro, siempre y cuando sean hermanos
+*/
+
+.main-title + p{
+	color: #fff;
+	font-size: 18px;
+	width: 550px;
+	line-height: 37px;
+}
+
+.buscador{
+	background-color: yellow;
+	position: relative;
+	margin-top: 230px;
+}
+
+.buscador input[type=text]{
+	/*width: calc(100% - 200px);  seria en este caso 84% -200%*/
+	width: calc(83.444444%);
+	height: 70px;
+	border: solid 1px #ccc;
+	font-family: inherit;
+	font-size: 20px;
+	padding: 0 30px;
+	/*padding: 0 210px 0 30px;*/
+}
+
+.buscador input[type=submit]{
+	width: 16.666%;
+	/*width: 200px;*/
+	/*widht: 16.666%; regla de tres simples si 1200 es 100, 200 es x*/
+	height: 70px;
+	background-color: #63BBDE;
+	color: #fff;
+	font-family: inherit;
+	font-size: 20px;
+	border: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	/*COLOR PICKER (CTRL + SHIFT + C)*/
+}
+.buscador input[type=submit]{
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.buscador input[type=submit]:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.servicios-destacados{
+	margin-top: 150px;
+}
+
+.servicios-destacados article{
+	text-align: center;
+	width: 25%; /* antes 300px*/
+	float: left;
+	padding: 0 25px;
+}
+
+.servicios-destacados article img{
+	width:33.33333333333%;
+	transition: all 250ms ease-in;
+	-webkit-transition: all 250ms ease-in;
+}
+
+.servicios-destacados article:hover img{
+	transform: rotate(360deg) scale(1.2);
+	-ms-transform: rotate(360deg) scale(1.2);
+	-webkit-transform: rotate(360deg) scale(1.2);
+	box-shadow: 0 0 12px black;
+	border-radius: 50%;
+}
+.subtitle{
+	text-align: center;
+	font-size: 45px;
+	margin-top: 80px 0 10px;
+}
+.subtitle + p{
+	text-align: center;
+	font-size: 15px;
+	color:#333;
+}
+
+
+.caracteristicas{
+	float:left;
+	width: 29.16%; /* width:350px;*/
+}
+
+.imagen-mitad {
+	width: 25%;
+	float: left;
+	margin: 0 8.33333333333%; /* regla de 3 simples con 1200px siempre tomar como referencia el elemento padre*/
+	
+}
+
+.imagen-mitad img{
+	width: 100%;
+}
+
+.caract-izq article{
+	position: relative;
+	text-align: right;
+	padding-right: 60px;
+	margin-top: 25px;
+}
+
+.caract-izq article img{
+	position: absolute;
+	right: 0;
+	top:0;
+	
+}
+
+.caract-der article{
+	position: relative;
+	padding-left:60px;
+	margin-top: 25px;
+}
+
+.caract-der article img{
+	position: absolute;
+	left:0;
+	top: 0px;
+	
+}
+
+.caracteristicas article img{
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+ .caracteristicas article img:hover{
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+
+.titulo-precios{
+	text-align: center;
+	font-size: 30px;
+	margin-top: 80px 0 10px;
+}
+
+
+}
+.titulo-precios + p{
+	text-align: center;
+	font-size: 3px;
+	color:#333;
+}
+
+
+.precios{
+	min-height: 500px;
+	background: url(../imagenes/indexbanner2.jpg) no-repeat center top scroll;
+	margin-top: -300px;
+}
+
+
+.package{
+	text-align: center;
+	width: 25%;
+	float: left;
+	margin-top: -100px;
+	border: solid white 1px;
+	background-color: white;
+	width: 20.83333%;
+	margin-left: 2.083333%;
+	margin-right: 2.083333%;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	box-shadow: 2px 2px 2px #E0E0E0;
+	/*box-shadow: 0 0 5px rgba(0, 0, 0, 0, 0.3);*/
+	font-size: 12px;
+
+}
+
+.package p{
+	font-family: "Raleway";
+}
+
+.package h5{
+	font-family: "Open Sans";
+	font-size: 15px;
+	margin-bottom: -25px;
+}
+
+.numero{
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: -10px;
+}
+
+
+
+footer{
+	margin-top: 300px;
+}
+
+.package input[type=submit]{
+	background-color: #0080FF;
+	color: #fff;
+	font-family: "Open Sans";
+	font-size: 12px;
+	font-weight: bold;
+	border: none;
+	padding: 8px 40px 8px;
+	border-radius: 5%;
+
+
+}
+
+.package input[type=submit]{
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.package input[type=submit]:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.package ul{
+	width: 80%;
+	margin:auto;
+}
+
+.name{
+	display: inline-block;
+	font-style: normal;
+	width: 80%;
+}
+
+.numeritos{
+	display: inline-block;
+	color:green;
+	font-weight: bold; 
+	width: 15%;
+}
+
+.numeritos1{
+	display: inline-block;
+	color:yellow; 
+	font-weight: bold; 
+	width: 15%;
+}
+
+.numeritos2{
+	display: inline-block;
+	color:orange; 
+	font-weight: bold; 
+	width: 15%;
+}
+
+.numeritos3{
+	display: inline-block;
+	color:red; 
+	font-weight: bold; 
+	width: 15%;
+}
+
+.txt{
+	height: 300px;
+	background-color: #4E4A58;
+	margin: 0 auto;
+	margin-bottom: 0;
+	margin-top: 500px;
+	text-align: center;
+}
+
+.txt p{
+	padding-top: 120px;
+	font-size: 20px;
+	color: white;
+	width: 100%;
+	text-align: center;
+	margin-left: 0%;
+	
+}
+
+.txt p span{
+	color: #63BBDE;
+	font-weight: bold;
+}
+
+.txt2{
+	
+	height: 200px;
+	background-color: #1B1A35;
+	margin: 0 auto;
+	margin-top: 0;
+	
+}
+
+.txt2 p{
+	float:left;
+	padding-top: 70px;
+	color: white;
+	font-family: "Open Sans";
+	font-size: 15px;
+}
+
+
+
+.txt2 ul{
+	float: right;	
+	margin-top: 90px;
+}
+
+.txt2 li{
+	display: inline-block;
+}
+
+
+.txt2 a{
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+	float: right;
+	display: inline-block;
+	margin-left: 15px;
+	
+}
+
+/*mediaquery siempre van al final
+
+cambiar todo a porcentajes
+
+Arranca con un @media(max-width:840px)--> sin punto y coma{
+
+	aca adentro vam reglas de estilo que me permiten reestructurar mis reglas de estilo para ese ancho de pantalla. Ese 840 va en funcion de algo que se conoce como un break point que quiere decir que cuando voy achicando la pantalla y algo se daña ese es mi break point. Hay una opcion de desarrolador
+	
+}*/
+
+@media (max-width: 860px){
+	.wrapper{
+		width: 96%;
+	}
+	header nav{
+		display: inline-block;
+		float: none;
+		margin-left: 18%;
+	}
+	.servicios-destacados article{
+		width: 50%;
+		min-height: 380px;
+	}
+
+.caract-izq article{
+	padding-right: 60px;
+	margin-top: 12px;
+	font-size: 12px;
+}
+
+
+.caract-der article{
+	padding-left:60px;
+	margin-top: 12px;
+	font-size: 12px;
+}
+}
+
+@media (max-width: 770px){
+	.wrapper{
+		width:96%;
+	}
+	header nav{
+		display: inline-block;
+		float: none;
+	}
+
+.servicios-destacados article{
+	width: 50%;
+	min-height: 300px;
+	
+}
+
+
+header{
+	position: static;
+	
+	text-align: center;
+
+}
+
+header nav{
+	display: block;
+	margin-left: 0;
+}
+
+header nav li{
+		display: block;
+		padding: 10px 0;
+}
+
+.contenedor-inicial{
+	margin-top: 0;
+	background: none;
+}
+
+.main-title,
+.main-title + p{ /*agrupacion de selectores*/
+
+	display: none; /*lo quita de la visual*/
+}
+
+.buscador{
+	margin-top: 20px;
+}
+
+.caracteristicas{
+	float:left;
+	width: 100%; /* width:350px;*/
+}
+
+.imagen-mitad{
+	float:none;
+	width: 50%
+	margin:50px auto;
+}
+
+.caract-izq article{
+	text-align: left;
+	padding-left: 100px;
+	
+}
+
+.caract-izq article img{
+	position: absolute;
+	left: 0;	
+}
+
+.caract-der article{
+	text-align: left;
+	padding-left:100px;
+	margin-top: 25px;
+}
+
+.caract-der article img{
+	position: absolute;
+	left:0;
+}
+
+
+
+
+.contenedor-inicial{
+	background-size: 100%;
+}
+
+.precios{
+	min-height: 250px;
+	margin-top: -250px;
+
+}
+
+
+.package{
+	
+	width: 40%;
+	margin-bottom: 100px;
+	box-shadow: 2px 2px 2px 2px #E0E0E0;
+	margin-top: 20px;
+
+}
+.txt{
+	
+	margin-bottom: 0;
+	margin-top: 1000px;
+	
+}
+
+.txt p{
+	padding-top: 130px;
+	font-size: 15px;
+	color: white;
+	width: 100%;
+	text-align: center;
+	margin-left: 0;
+	
+}
+
+
+
+/*@media (min-width: 420px){/*desde ahi hacia arriba y max width desde 20.83333%;								ahi hacia abajo*/
+}
+
+/*@media (min-width: 640px) and (orientation: landscape or portrait){
+
+}*/
+
+
+/*cuando quiero sacarle los posicionamientos a los elementos pongo position: static, con position static el z index no funciona*/
+
+@media (max-width: 480px){
+
+.buscador input[type=submit]{
+	width: 25%;
+	font-size: 17px;
+
+}
+
+.servicios-destacados{
+	margin-top: 40px;
+}
+
+.servicios-destacados article{
+	float:none;
+	width: 100%;
+	min-height: 0; /*para sacar un heigth*/
+	margin-bottom: 30px;
+
+}
+
+
+
+}
+
+/* inset -5px -5px 10px para sombra interna
+text-shadow aca no hay inser
+box shadow
